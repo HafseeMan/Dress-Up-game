@@ -1,0 +1,82 @@
+/*Declare width and height of each div to 555px and 987px (same as dimensions of each image) */
+body {
+    text-align: center;
+    text-transform: uppercase;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif ;
+    background-color:rgb(236, 226, 230)
+}
+
+h1 {
+    border-bottom: 2px solid black;
+}
+
+#container{
+    align-self: center;
+    position: absolute;
+    margin: auto;
+    width: 755px;
+    height: 987px;
+    /*200px wider than divs inside */
+}
+
+#background{
+    position: absolute;
+    width: 555px;
+    height: 987px;
+    left: 100px;
+    right: 100px;
+    border: 1px solid yellow; 
+    /*background-image: url("../img/resized_background.png");*/
+}
+
+#hairback {
+    position: absolute;
+    width: 555px;
+    height: 987px;
+}
+
+#shoes{
+    position: absolute;
+    width: 555px;
+    height: 987px;
+} 
+
+#woman {
+    position: absolute;
+    width: 555px;
+    height: 987px;
+    background-image: url("../img/woman.png");
+}
+
+.dress1{
+    position: absolute;
+    width: 555px;
+    height: 987px;    
+    background-image: url('../img/dress1.png');
+}
+
+.dress2{
+    position: absolute;
+    width: 555px;
+    height: 987px;
+    background-image: url('../img/dress2.png');
+}
+
+.dress3{
+    position: absolute;
+    width: 555px;
+    height: 987px;
+    background-image: url('../img/dress3.png');
+}
+
+/*buttons*/
+input {
+    display: block;
+    padding: 0.5rem;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    background-color: rgb(107, 68, 62);
+    color: whitesmoke;
+    text-align: center;
+    margin-top: 0.5rem;
+    cursor: pointer;
+}
