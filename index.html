@@ -9,25 +9,80 @@
     <link rel='stylesheet' type='text/css' media='screen' href='css/style.css'>
 </head>
 <body>    
+    <div class="container">
+        <div class="h2 title text-capitalize text-center border-bottom-primary">
+            Virtual Closet
+        </div>
+        <div class="card">
+            <div class="card-header p-0 border-0">
+                <nav class="navbar p-0 navbar-expand-lg navbar-light text-center">
+                    <a class="navbar-brand px-4" href="#">Select</a>
+                    <a class="nav-item nav-link active" >1. Model <span class="sr-only">(current)</span></a>
+                    <a class="nav-item nav-link" >2. Style</a>
+                    <a class="nav-item nav-link">3. Fabric</a>
+                </nav>
+            </div>
+            <div class="card-body py-0 row">
+                <!--OPTIONS SECTION-->
+                <div class="col-xl-6 col-lg-6 col-sm-12 col-xs-12 m-0 p-0 options-display">
+                    <div class="my-4"></div>
+                    <div class="row">
+                        <div class="col-4 text-center mx-auto">
+                            <div class="option shadow-lg text-center mx-auto shadow-sm" id="fabric-1"></div>
+                        </div>
+                        <div class="col-xl-4 col-lg-4 col-md-4 col-sm-4 col-xs-4 text-center mx-auto col-xs-4">
+                            <div class="option shadow-lg text-center mx-auto shadow-sm" id="fabric-1"></div>
+                        </div>
+                        <div class="col-xl-4 col-lg-4 col-md-4 col-sm-4 text-center mx-auto col-xs-4">
+                            <div class="option shadow-lg text-center mx-auto shadow-sm" id="fabric-1"></div>
+                        </div>
+                        <p class="d-lg-none text-center">- - horizontal scroll bar here - -</p>
+                    </div>
+                </div>
+                <div class="col-xl-6 col-lg-6 col-sm-12 col-xs-12">
+                    <!--MODEL DISPLAY-->
+                    <div id="custom-container">
+                        <div id="background">
+                            <div id="head"></div>
+                            <div id="hairback"></div>
+                            <div id="woman"></div>
+                            <div id="shoes"></div>
+                            <div id="dress" class="dress1"></div>
+                            <div id="hairfront"></div>
+                        </div>
+                </div>
+                </div>
+            </div>
+            <div class="card-footer">
+
+            </div>
+        </div>
+    </div>
+
+    <div class="content-wrap">
+        <div class="row">
+
+        </div>
+    </div>
+
     <!--
     <h1>Dress Up Game</h1>
-    <div id="container" class="container">
+    <div id="custom-container" class="container">
         <div class="col-10">
             <div id="background">
                 <div id="head"></div>
                 <div id="hairback"></div>
                 <div id="woman"></div>
                 <div id="shoes"></div>
-                <div id="dress" class="dress1"></div>
+                <div id="dress"></div>
                 <div id="hairfront"></div>
             </div>
         </div>
         <div class="col-2">
             
-            <input type="button" value="NEXT Dress" id="nextDress" onclick="nextdress()">    
+            <input type="button" value="NEXT Dress" id="nextDress" onclick="nextOutfit()">    
         </div>
-    </div>
--->
+    </div>-->    
     <script src="js/code.js"></script>
 </body>
 </html>
