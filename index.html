@@ -7,82 +7,64 @@
     <meta name='viewport' content='width=device-width, initial-scale=1'>
     <link rel='stylesheet' type='text/css' media='screen' href='css/bootstrap.css'>
     <link rel='stylesheet' type='text/css' media='screen' href='css/style.css'>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Arizonia&display=swap" rel="stylesheet">
 </head>
 <body>    
     <div class="container">
-        <div class="h2 title text-capitalize text-center border-bottom-primary">
-            Virtual Closet
-        </div>
-        <div class="card">
-            <div class="card-header p-0 border-0">
-                <nav class="navbar p-0 navbar-expand-lg navbar-light text-center">
-                    <a class="navbar-brand px-4" href="#">Select</a>
-                    <a class="nav-item nav-link active" >1. Model <span class="sr-only">(current)</span></a>
-                    <a class="nav-item nav-link" >2. Style</a>
-                    <a class="nav-item nav-link">3. Fabric</a>
-                </nav>
-            </div>
-            <div class="card-body py-0 row">
-                <!--OPTIONS SECTION-->
-                <div class="col-xl-6 col-lg-6 col-sm-12 col-xs-12 m-0 p-0 options-display">
-                    <div class="my-4"></div>
-                    <div class="row">
-                        <div class="col-4 text-center mx-auto">
-                            <div class="option shadow-lg text-center mx-auto shadow-sm" id="fabric-1"></div>
+        <div class="custom-hr"></div>
+        <h1 class="text-center text-dark text-monospace">Ankara DRESS UP</h1>
+            <div class="container-fluid mb-4">
+                <div class="row mt-4">
+                    <!--Pick Style section-->
+                    <div class="col-xl-6 col-lg-6 col-md-5 col-sm-4 col-xs-4">
+                        <div class="h4 text-muted p-2">Pick Style</div>
+                        <div class="row">
+                            <div class="col-xl-4 col-lg-4 col-md-12 col-sm-12 col-xs-12 text-center mx-auto col-xs-4">
+                                <div class="block opt-num opt-num-selected"></div>
+                                <div class="option active-option text-center mx-auto shadow-sm style-option" id="style-1"></div>
+                            </div>
+                            <div class="col-xl-4 col-lg-4 col-md-12 col-sm-12 col-xs-12 text-center mx-auto col-xs-4">
+                                <div class="block opt-num"></div>
+                                <div class="option shadow-lg text-center mx-auto shadow-sm style-option" id="style-2"></div>
+                            </div>
+                            <div class="col-xl-4 col-lg-4 col-md-12 col-sm-12 col-xs-12 text-center mx-auto col-xs-4">
+                                <div class="block opt-num"></div>
+                                <div class="option shadow-lg text-center mx-auto shadow-sm style-option" id="style-3"></div>
+                            </div>
                         </div>
-                        <div class="col-xl-4 col-lg-4 col-md-4 col-sm-4 col-xs-4 text-center mx-auto col-xs-4">
-                            <div class="option shadow-lg text-center mx-auto shadow-sm" id="fabric-1"></div>
+                        <div class="h4 text-muted p-2">Pick Fabric</div>
+                        <div class="row">
+                            <div class="col-xl-4 col-lg-4 col-md-12 col-sm-12 col-xs-12 text-center mx-auto col-xs-4">
+                                <div class="block opt-num opt-num-selected"></div>
+                                <div class="option shadow-lg text-center mx-auto fabric-selected" id="fabric-1"></div>
+                            </div>
+                            <div class="col-xl-4 col-lg-4 col-md-12 col-sm-12 col-xs-12 text-center mx-auto col-xs-4">
+                                <div class="block opt-num"></div>
+                                <div class="option shadow-lg text-center mx-auto shadow-sm" id="fabric-2"></div>
+                            </div>
+                            <div class="col-xl-4 col-lg-4 col-md-12 col-sm-12 col-xs-12 text-center mx-auto col-xs-4">
+                                <div class="block opt-num"></div>
+                                <div class="option shadow-lg text-center mx-auto shadow-sm" id="fabric-3"></div>
+                            </div>
                         </div>
-                        <div class="col-xl-4 col-lg-4 col-md-4 col-sm-4 text-center mx-auto col-xs-4">
-                            <div class="option shadow-lg text-center mx-auto shadow-sm" id="fabric-1"></div>
+                    </div>
+                    <!--Model display section-->
+                    <div class="col-xl-6 col-lg-6 col-md-7 col-sm-8 col-xs-8">
+                        <div id="display-container">
+                            <div id="background">
+                                <div id="woman" class="woman-3"></div>
+                                <div id="dress" class="dress1-3"></div>
+                            </div>
                         </div>
-                        <p class="d-lg-none text-center">- - horizontal scroll bar here - -</p>
                     </div>
                 </div>
-                <div class="col-xl-6 col-lg-6 col-sm-12 col-xs-12">
-                    <!--MODEL DISPLAY-->
-                    <div id="custom-container">
-                        <div id="background">
-                            <div id="head"></div>
-                            <div id="hairback"></div>
-                            <div id="woman"></div>
-                            <div id="shoes"></div>
-                            <div id="dress" class="dress1"></div>
-                            <div id="hairfront"></div>
-                        </div>
-                </div>
-                </div>
-            </div>
-            <div class="card-footer">
+            </div><!--inner container-fluid close-->
 
-            </div>
-        </div>
-    </div>
+    </div><!--container close-->
 
-    <div class="content-wrap">
-        <div class="row">
 
-        </div>
-    </div>
-
-    <!--
-    <h1>Dress Up Game</h1>
-    <div id="custom-container" class="container">
-        <div class="col-10">
-            <div id="background">
-                <div id="head"></div>
-                <div id="hairback"></div>
-                <div id="woman"></div>
-                <div id="shoes"></div>
-                <div id="dress"></div>
-                <div id="hairfront"></div>
-            </div>
-        </div>
-        <div class="col-2">
-            
-            <input type="button" value="NEXT Dress" id="nextDress" onclick="nextOutfit()">    
-        </div>
-    </div>-->    
     <script src="js/code.js"></script>
 </body>
 </html>

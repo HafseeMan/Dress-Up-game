@@ -3,34 +3,35 @@ body {
     text-align: center;
     text-transform: uppercase;
     font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif ;
-    background-color:rgb(236, 226, 230)
+    background-image: linear-gradient(rgb(202, 199, 199), #fff);
 }
 
-h1 {
-    border-bottom: 2px solid black;
+.custom-hr{
+    display: block;
+    margin-top: 2rem;
+    border-bottom: 3px double rgb(145, 140, 142);
+    margin-bottom: 2rem;
+    min-width: 400px;
+    width: 70%;
+    margin-left: auto;
+    margin-right: auto;
 }
-/******** Navbar *************************************************************/
-.nav-link{
-    color: tomato;
-    margin: 0;
-    padding: 1rem;
-    margin-bottom: 0;
 
+h1{
+    color: black !important;
 }
 
-.active{
-    border: 1px solid gray;
-    box-shadow: 0px 0px 0.2vh 0px rgba(60,30,0,0.05); 
-    color: white;
-    border-bottom: none;
-    background-color: rgb(196, 153, 178);
+.title{
+    font-family: 'Arizonia', cursive;
 }
 
 /******* Display section  ********************************************/
-#custom-container{
+#display-container{
     align-self: center;
     align-content: center;
     margin: auto;
+    margin-top: auto;
+    margin-bottom: auto;
     width: 382px;
     height: 500px;
     /*200px wider than divs inside */
@@ -45,56 +46,77 @@ h1 {
     /*background-image: url("../img/resized_background.png");*/
 }
 
-#hairback {
-    position: absolute;
-    width: 382px;
-    height: 500px;
-}
-
-#shoes{
-    position: absolute;
-    width: 555px;
-    height: 987px;
-} 
-
 #woman {
     position: absolute;
     width: 382px;
     height: 500px;
-    background-image: url("../img/woman.png");
     background-position: center;
     background-size: contain;
     background-repeat: no-repeat;
+    border-right: 2px double whitesmoke;
+    border-left: 2px double whitesmoke;
 }
 
-.dress1{
+#dress {
     position: absolute;
     width: 382px;
     height: 500px;   
-    background-image: url('../img/dress1.png');
     background-position: center;
     background-size: contain;
     background-repeat: no-repeat;
 }
 
-.dress2{
-    position: absolute;
-    width: 555px;
-    height: 987px;
-    background-image: url('../img/dress2.png');
-    background-position: center;
-    background-size: contain;
-    background-repeat: no-repeat;
+/***STYLE 1***************/
+.woman-1{
+    background-image: url("../img/woman1.png");
 }
 
-.dress3{
-    position: absolute;
-    width: 555px;
-    height: 987px;
-    background-image: url('../img/dress3.png');
-    background-position: center;
-    background-size: contain;
-    background-repeat: no-repeat;
+.dress1-1{
+    background-image: url('../img/dress1-1.png');
+}
+
+.dress2-1{
+    background-image: url('../img/dress2-1.png');
+}
+
+.dress3-1{
+    background-image: url('../img/dress3-1.png');
+}
+
+/***STYLE 2***************/
+
+.woman-2{
+    background-image: url("../img/woman2.png");
+}
+
+.dress1-2{
+    background-image: url('../img/dress1-2.png');
+}
+
+.dress2-2{
+    background-image: url('../img/dress3-2.png');
+}
+
+.dress3-2{
+    background-image: url('../img/dress3-2.png');
+}
+
+/***STYLE 3***************/
+
+.woman-3{
+    background-image: url("../img/woman3.png");
+}
+
+.dress1-3{
+    background-image: url('../img/dress1-3.png');
+}
+
+.dress2-3{
+    background-image: url('../img/dress2-3.png');
+}
+
+.dress3-3{
+    background-image: url('../img/dress3-3.png');
 }
 
 /*buttons*/
@@ -110,24 +132,78 @@ input {
 }
 /*********************************************************/
 /*Options section*/
-.options-display{
-    background-image: linear-gradient(rgb(196, 153, 178), rgb(212, 204, 204));
-    margin-top: 0;
+.active-option{
+    box-shadow: 10px 10px black;
+    background-color: rgba(255, 255, 255, 0.822);
 }
+
+.opt-num{
+    background-color: white;
+    border: 1px solid rgb(150, 147, 147);
+    width: 15px;
+    height: 15px;
+    padding-bottom: 5px;
+    align-content: center;
+    align-self: center;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 4px;
+    border-radius: 50%;
+}
+.opt-num-selected{
+    background-color: rgb(95, 77, 88);
+    border: none;
+}
+
 .option{
     width: 150px;
     height:150px;
     align-self: center;
     margin: 2px;
-    box-shadow: 10px 10px black;
+    cursor: pointer;
 }
 
 .option:hover{
-    border-bottom: 4px solid whitesmoke;
+    border-bottom: 4px double rgba(255, 255, 255, 0.822);
+}
+
+.style-option{
+    background-position: center;
+    background-size: 120%;
+    background-repeat: none;
+}
+
+.fabric-selected{
+    border-bottom: 5px solid white;
+}
+
+#style-1{
+    background-image: url('../img/styles/style1.png');
+}
+
+#style-2{
+    background-image: url('../img/styles/style2.png');
+}
+
+#style-3{
+    background-image: url('../img/styles/style3.png');
 }
 
 #fabric-1{
     background-image: url('../img/fabrics/ankara1.jpg');
+    background-position: center;
+    background-size:cover;
+    background-repeat: none;
+}
+#fabric-2{
+    background-image: url('../img/fabrics/ankara2.jpg');
+    background-position: center;
+    background-size:cover;
+    background-repeat: none;
+}
+#fabric-3{
+    background-image: url('../img/fabrics/ankara3.jpg');
     background-position: center;
     background-size:cover;
     background-repeat: none;
