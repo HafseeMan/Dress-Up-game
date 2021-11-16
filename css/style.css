@@ -43,7 +43,6 @@ h1{
     height: 500px;
     margin: 0;
     align-content: center;
-    /*background-image: url("../img/resized_background.png");*/
 }
 
 #woman {
@@ -133,7 +132,6 @@ input {
 /*********************************************************/
 /*Options section*/
 .active-option{
-    box-shadow: 10px 10px black;
     background-color: rgba(255, 255, 255, 0.822);
 }
 

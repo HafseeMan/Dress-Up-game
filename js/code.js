@@ -1,3 +1,20 @@
+/*
+ALGORITHM:
+By default style 1 selected. and fabric 1 selected.
+1. on clicking another style:
+    * the style card changes to classname " "
+    * the circle div ontop changes to "opt-num-selected"
+    * In the display section the respective "womanx" is displayed with dress1-x
+
+2. on clicking fabric.. the classname/id of dress is changes appropriatly
+
+
+
+
+*/
+
+
+
 var state = 0;
 
 function nextOutfit(){
