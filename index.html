@@ -22,31 +22,43 @@
                         <div class="h4 text-muted p-2">Pick Style</div>
                         <div class="row">
                             <div class="col-xl-4 col-lg-4 col-md-12 col-sm-12 col-xs-12 text-center mx-auto col-xs-4">
-                                <div class="block opt-num opt-num-selected"></div>
-                                <div class="option active-option text-center mx-auto shadow-sm style-option" id="style-1"></div>
+                                <div class="block opt-num opt-num-s opt-num-selected"></div>
+                                <div class="option active-option text-center mx-auto shadow-sm style-option" 
+                                     id="style-1"
+                                     onclick="setOutfit(this)"></div>
                             </div>
                             <div class="col-xl-4 col-lg-4 col-md-12 col-sm-12 col-xs-12 text-center mx-auto col-xs-4">
-                                <div class="block opt-num"></div>
-                                <div class="option shadow-lg text-center mx-auto shadow-sm style-option" id="style-2"></div>
+                                <div class="block opt-num opt-num-s"></div>
+                                <div class="option shadow-lg text-center mx-auto shadow-sm style-option" 
+                                     id="style-2"
+                                     onclick="setOutfit(this)"></div>
                             </div>
                             <div class="col-xl-4 col-lg-4 col-md-12 col-sm-12 col-xs-12 text-center mx-auto col-xs-4">
-                                <div class="block opt-num"></div>
-                                <div class="option shadow-lg text-center mx-auto shadow-sm style-option" id="style-3"></div>
+                                <div class="block opt-num opt-num-s"></div>
+                                <div class="option shadow-lg text-center mx-auto shadow-sm style-option" 
+                                     id="style-3"
+                                     onclick="setOutfit(this)"></div>
                             </div>
                         </div>
                         <div class="h4 text-muted p-2">Pick Fabric</div>
                         <div class="row">
                             <div class="col-xl-4 col-lg-4 col-md-12 col-sm-12 col-xs-12 text-center mx-auto col-xs-4">
-                                <div class="block opt-num opt-num-selected"></div>
-                                <div class="option shadow-lg text-center mx-auto fabric-selected" id="fabric-1"></div>
+                                <div class="block opt-num opt-num-f opt-num-selected"></div>
+                                <div class="option fabric-option shadow-lg text-center mx-auto fabric-selected" 
+                                     id="fabric-1"
+                                     onclick="setFabric(this, 1)"></div>
                             </div>
                             <div class="col-xl-4 col-lg-4 col-md-12 col-sm-12 col-xs-12 text-center mx-auto col-xs-4">
-                                <div class="block opt-num"></div>
-                                <div class="option shadow-lg text-center mx-auto shadow-sm" id="fabric-2"></div>
+                                <div class="block opt-num opt-num-f"></div>
+                                <div class="option fabric-option shadow-lg text-center mx-auto shadow-sm" 
+                                     id="fabric-2"
+                                     onclick="setFabric(this, 2)"></div>
                             </div>
                             <div class="col-xl-4 col-lg-4 col-md-12 col-sm-12 col-xs-12 text-center mx-auto col-xs-4">
-                                <div class="block opt-num"></div>
-                                <div class="option shadow-lg text-center mx-auto shadow-sm" id="fabric-3"></div>
+                                <div class="block opt-num opt-num-f"></div>
+                                <div class="option fabric-option shadow-lg text-center mx-auto shadow-sm" 
+                                     id="fabric-3"
+                                     onclick="setFabric(this, 3)"></div>
                             </div>
                         </div>
                     </div>
@@ -54,8 +66,8 @@
                     <div class="col-xl-6 col-lg-6 col-md-7 col-sm-8 col-xs-8">
                         <div id="display-container">
                             <div id="background">
-                                <div id="woman" class="woman-3"></div>
-                                <div id="dress" class="dress1-3"></div>
+                                <div id="woman" ></div>
+                                <div id="dress"></div>
                             </div>
                         </div>
                     </div>

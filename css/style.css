@@ -93,7 +93,7 @@ h1{
 }
 
 .dress2-2{
-    background-image: url('../img/dress3-2.png');
+    background-image: url('../img/dress2-2.png');
 }
 
 .dress3-2{
@@ -160,21 +160,34 @@ input {
     align-self: center;
     margin: 2px;
     cursor: pointer;
-}
-
-.option:hover{
-    border-bottom: 4px double rgba(255, 255, 255, 0.822);
-}
-
-.style-option{
     background-position: center;
     background-size: 120%;
     background-repeat: none;
 }
 
-.fabric-selected{
-    border-bottom: 5px solid white;
+.style-option{
+    background-size: 120%;
 }
+
+.style-option:hover{
+    background-color: white;
+}
+
+.fabric-option{    
+    object-fit: cover;
+    opacity: 0.7;
+}
+
+.fabric-option:hover{
+    opacity: 100%;
+    border-top: 2px solid white;
+    border-bottom: 2px solid white;
+}
+
+.fabric-selected{
+    opacity: 100%;
+}
+
 
 #style-1{
     background-image: url('../img/styles/style1.png');
@@ -190,9 +203,7 @@ input {
 
 #fabric-1{
     background-image: url('../img/fabrics/ankara1.jpg');
-    background-position: center;
-    background-size:cover;
-    background-repeat: none;
+
 }
 #fabric-2{
     background-image: url('../img/fabrics/ankara2.jpg');
